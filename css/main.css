@@ -95,7 +95,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 12px/16px flexoLight, Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
@@ -191,6 +191,35 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+/* @ fonts/flexoBold/stylesheet.css */
+@font-face {
+	font-family: 'flexoBold';
+	src: url('flexo-bold-webfont.eot');
+	src: url('flexo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('flexo-bold-webfont.woff') format('woff'),
+		url('flexo-bold-webfont.ttf') format('truetype'),
+		url('flexo-bold-webfont.svg') format('svg');
+}
+
+/* @ fonts/flexoLight/stylesheet.css */
+@font-face {
+	font-family: 'flexoLight';
+	src: url('flexo-light-webfont.eot');
+	src: url('flexo-light-webfont.eot?#iefix') format('embedded-opentype'),
+		url('flexo-light-webfont.woff') format('woff'),
+		url('flexo-light-webfont.ttf') format('truetype'),
+		url('flexo-light-webfont.svg') format('svg');
+}
+
+/* @ fonts/flexoRegular/stylesheet.css */
+@font-face {
+	font-family: 'flexoRegular';
+	src: url('flexo-regular-webfont.eot');
+	src: url('flexo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('flexo-regular-webfont.woff') format('woff'),
+		url('flexo-regular-webfont.ttf') format('truetype'),
+		url('flexo-regular-webfont.svg') format('svg');
+}
 
 
 

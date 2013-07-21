@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'flexoBold';
+	src: url('flexo-bold-webfont.eot');
+	src: url('flexo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('flexo-bold-webfont.woff') format('woff'),
+		url('flexo-bold-webfont.ttf') format('truetype'),
+		url('flexo-bold-webfont.svg') format('svg');
+}
