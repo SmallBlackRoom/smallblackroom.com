@@ -1,8 +1,0 @@
-@font-face {
-	font-family: 'flexoRegular';
-	src: url('flexo-regular-webfont.eot');
-	src: url('flexo-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		url('flexo-regular-webfont.woff') format('woff'),
-		url('flexo-regular-webfont.ttf') format('truetype'),
-		url('flexo-regular-webfont.svg') format('svg');
-}
