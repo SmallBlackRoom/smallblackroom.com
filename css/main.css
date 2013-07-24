@@ -114,14 +114,14 @@ body {
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #000;
+    border-top: 0px solid #000;
 }
 
 .footer-container {
     background: #484B4F;    
 }
 
-/*body, HF*/
+body,
 .header-container,
 .main aside {
     background: #000;
@@ -135,22 +135,47 @@ body {
     MOBILE: Menu
    ============== */
 
+#follow {
+    display: none;
+    visibility: hidden;
+}
+
+nav {
+    margin-bottom: 40px;
+}
+
+nav, nav li {
+    background: #000 url('../img/background-menu-stripes.png') repeat-x scroll top left;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
 }
 
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
+nav li,
+nav li a {
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: lighter;
+    font-size: 14px;
 
     color: #999;
-    background: #000;
+}
+
+nav li {
+    display: block;
+    padding: 15px 0;
+    height: 25px;
+    line-height: 25px;
+}
+
+nav li:last-child {
+    line-height: 16px;
+}
+
+nav li a {
+    margin-left: 10px;
 }
 
 nav a:hover,
@@ -170,18 +195,55 @@ nav a:hover {
     padding: 30px 0;
 }
 
-.main article h1 {
-    font-size: 2em;
+.main h1 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: lighter;
+}
+
+.main h2 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.main h3 {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    color: white;
 }
 
 .main aside {
     color: #ccc;
-    padding: 0px 5% 10px;
+    padding: 0px 20px 10px 20px;
+}
+
+.main aside h1,
+.main aside h2 {
+    padding-bottom: 40px;
+}
+
+.main aside footer {
+    padding-top: 20px;
+    text-align: center;
 }
 
 .footer-container footer {
     color: #888;
-    padding: 20px 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-container h1 {
+    font-size: 27px;
+    line-height: 34px;
+    font-weight: lighter;
+    padding: 0px 0px 40px 0px;
+}
+
+.footer-container iframe {
+    padding-bottom: 50px;
 }
 
 /* ===============
@@ -232,18 +294,30 @@ nav a:hover {
     font-style: normal;
 }
 
+.main-container {
+    position: relative;
+}
 
+#all-together {
+    position: relative;
+    top: -78px;
+    width: 100%;
+}
 
+#logo {
+    position: absolute;
+    z-index: 100;
+}
 
+#discount-badge  {
+    position: absolute;
+    top: 20px;
+}
 
-
-
-
-
-
-
-
-
+.main aside {
+    position: relative;
+    top: -45px;
+}
 
 /* ==========================================================================
    Media Queries
@@ -251,30 +325,29 @@ nav a:hover {
 
 @media only screen and (min-width: 480px) {
 
+    .main aside {
+        position: relative;
+        top: -47px;
+    }
+
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
 
-    nav a {
+    nav {
+        position: relative;
+        top: -55px;
+    }
+
+    nav li {
         float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
+        width: 25%;
     }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
+    
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
-
+    
     nav ul li {
         display: inline;
     }
@@ -284,20 +357,7 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    /*
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-    */
+@media only screen and (min-width: 789px) {
 
 /* ============
     WIDE: Menu
@@ -307,11 +367,20 @@ nav a:hover {
         float: left;
     }
 
-    nav {
-        float: right;
-        width: 38%;
+    #follow {
+        display: block;
+        visibility: visible;
+        text-align: right;
     }
-
+    
+    nav li {
+        width: 20%;
+    }
+    
+    nav li:last-child {
+        text-align: left;
+    }
+    
 /* ============
     WIDE: Main
    ============ */
@@ -323,7 +392,7 @@ nav a:hover {
 
     .main aside {
         float: right;
-        width: 28%;
+        width: 265px;
     }
 }
 
@@ -332,10 +401,16 @@ nav a:hover {
 /* ===============
     Maximal Width
    =============== */
-
+    
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+    }
+    
+    nav {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin-left: auto;        
+        margin-right: auto;        
     }
 }
 
