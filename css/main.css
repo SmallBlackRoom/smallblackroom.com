@@ -15,7 +15,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: #ccc;
 }
 
 body {
@@ -105,22 +105,26 @@ body {
 }
 
 /* ===================
-    ALL: Orange Theme
+    ALL: Black Theme
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #000;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #000;
 }
 
+.footer-container {
+    background: #484B4F;    
+}
+
+/*body, HF*/
 .header-container,
-.footer-container,
 .main aside {
-    background: #f16529;
+    background: #000;
 }
 
 .title {
@@ -145,13 +149,13 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
-    background: #e44d26;
+    color: #999;
+    background: #000;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: #999;
 }
 
 nav a:hover {
@@ -171,12 +175,12 @@ nav a:hover {
 }
 
 .main aside {
-    color: white;
+    color: #ccc;
     padding: 0px 5% 10px;
 }
 
 .footer-container footer {
-    color: white;
+    color: #888;
     padding: 20px 0;
 }
 
@@ -286,12 +290,14 @@ nav a:hover {
     WIDE: CSS3 Effects
    ==================== */
 
+    /*
     .header-container,
     .main aside {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
     }
+    */
 
 /* ============
     WIDE: Menu
