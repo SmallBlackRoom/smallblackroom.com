@@ -339,7 +339,7 @@ a:hover {
     top: 20px;
 }
 
-.main aside {
+#index .main aside {
     position: relative;
     top: -45px;
 }
@@ -403,7 +403,14 @@ a:hover {
 
     .main aside {
         position: relative;
+    }
+
+    #index .main aside {
         top: -47px;
+    }
+
+    #about .main aside {
+        top: -15px;
     }
 
     #about .header-container header {
@@ -541,6 +548,7 @@ a:hover {
 
     #about .main aside {
         border-top: 25px solid #000;
+        top: -47px;
     }
 
     #about .main aside section {
