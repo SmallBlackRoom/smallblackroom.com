@@ -305,6 +305,21 @@ nav a:hover {
     font-style: normal;
 }
 
+a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover,
+a:visited {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .main-container {
     position: relative;
 }
