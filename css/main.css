@@ -405,6 +405,7 @@ nav a:hover {
     }
 
     .main aside {
+        margin-top: 20px;
         float: right;
         width: 265px;
     }
@@ -414,11 +415,39 @@ nav a:hover {
     }
 }
 
+@media only screen and (min-width: 960px) {
+
+    .main aside {
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+
+    .main aside {
+        margin-top: 40px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+
+    .main aside {
+        margin-top: 45px;
+        margin-right: 40px;
+    }
+}
+
 @media only screen and (min-width: 1140px) {
 
 /* ===============
     Maximal Width
    =============== */
+
+    .main aside {
+        margin-top: 50px;
+        margin-right: 70px;
+    }
     
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
