@@ -550,7 +550,7 @@ a:hover {
     }
 
     #about .main aside section p {
-        float: none;
+        float: none !important;
     }
 }
 
