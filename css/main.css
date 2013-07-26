@@ -112,12 +112,12 @@ body {
     border-bottom: 20px solid #000;
 }
 
-.footer-container,
 .main aside {
     border-top: 0px solid #000;
 }
 
 .footer-container {
+    border-top: 0px solid #000;
     background: #484B4F;    
 }
 
@@ -195,6 +195,11 @@ nav a:hover {
     padding: 30px 0;
 }
 
+.main p {
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
+
 .main h1 {
     font-size: 24px;
     line-height: 34px;
@@ -207,11 +212,13 @@ nav a:hover {
     font-weight: bold;
 }
 
-.main h3 {
+.main article h3 {
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
     color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .main aside {
@@ -222,6 +229,11 @@ nav a:hover {
 .main aside h1,
 .main aside h2 {
     padding-bottom: 40px;
+}
+
+.main aside header,
+.main aside section {
+    text-align: center;
 }
 
 .main aside footer {
@@ -332,6 +344,42 @@ nav a:hover {
 	height: 100%;
 }
 
+/* About: page header */
+
+#about .header-container header {
+    height: 200px;
+}
+
+#about .main aside {
+    border-top: 40px solid #000;
+}
+
+#about .main aside p {
+    margin-bottom: 40px;
+}
+
+#app-spotlight {
+    position: relative;
+    left: -40px;
+    top: -15px;
+}
+
+#app-spotlight img {
+    width: 50%;
+}
+
+#app-tagline {
+    position: relative;
+    left: 40%;
+    top: -90px;
+    width: 180px;
+    
+    font-size: 136%;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -341,6 +389,18 @@ nav a:hover {
     .main aside {
         position: relative;
         top: -47px;
+    }
+
+    #about .header-container header {
+        height: 250px;
+    }
+
+    #app-tagline {
+        left: 41%;
+        top: -110px;
+        font-size: 175%;
+        width: 220px;
+        line-height: 25px;
     }
 
 /* ====================
@@ -370,7 +430,58 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 789px) {
+@media only screen and (min-width: 560px) {
+
+    #app-tagline {
+        left: 42%;
+        top: -115px;
+    }
+}
+
+@media only screen and (min-width: 610px) {
+
+    #about .header-container header {
+        height: 280px;
+    }
+
+    #app-tagline {
+        left: 43%;
+        top: -115px;
+    }
+
+    #about .main aside section {
+        width: 510px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about .main aside section p {
+        float: left;
+    }
+
+    #about .main aside section p:last-child {
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 664px) {
+
+    #about .header-container header {
+        height: 320px;
+    }
+
+    #app-icon {
+        width: 298px !important;
+    }
+
+    #app-tagline {
+        left: 256px;
+        top: -120px;
+    }
+
+}
+
+@media only screen and (min-width: 790px) {
 
 /* ============
     WIDE: Menu
@@ -412,11 +523,37 @@ nav a:hover {
     #all-together {
         top: -94px;
     }
+
+    #about .main aside {
+        border-top: 25px solid #000;
+    }
+
+    #about .main aside section {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #about .main aside section p {
+        float: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+
+    #app-name {
+        width: 421px !important;
+    }
+    
+    #app-tagline {
+        width: 430px;
+        top: -95px;
+    }
 }
 
 @media only screen and (min-width: 960px) {
 
-    .main aside {
+    #index .main aside {
         margin-top: 35px;
     }
 }
@@ -424,16 +561,22 @@ nav a:hover {
 @media only screen and (min-width: 1020px) {
 
     .main aside {
-        margin-top: 40px;
         margin-right: 20px;
+    }
+
+    #index .main aside {
+        margin-top: 40px;
     }
 }
 
 @media only screen and (min-width: 1080px) {
 
     .main aside {
-        margin-top: 45px;
         margin-right: 40px;
+    }
+
+    #index .main aside {
+        margin-top: 45px;
     }
 }
 
@@ -444,8 +587,11 @@ nav a:hover {
    =============== */
 
     .main aside {
-        margin-top: 50px;
         margin-right: 70px;
+    }
+
+    #index .main aside {
+        margin-top: 50px;
     }
     
     .wrapper {
