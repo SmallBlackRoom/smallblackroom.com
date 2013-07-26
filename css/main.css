@@ -409,6 +409,10 @@ nav a:hover {
         float: right;
         width: 265px;
     }
+    
+    #all-together {
+        top: -94px;
+    }
 }
 
 @media only screen and (min-width: 1140px) {
