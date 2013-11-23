@@ -248,10 +248,13 @@ nav a:hover {
     padding-top: 20px;
 }
 
-.footer-container footer {
+.footer-container footer.wrapper {
     color: #888;
     padding: 10px 0;
-    text-align: center;
+}
+
+.footer-container blockquote footer {
+    text-align: right;
 }
 
 .footer-container h1 {
