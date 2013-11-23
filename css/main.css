@@ -583,6 +583,10 @@ a:hover {
         width: 430px;
         top: -95px;
     }
+
+    .footer-container blockquote p {
+        width: 90%;
+    }
 }
 
 @media only screen and (min-width: 960px) {
@@ -593,6 +597,10 @@ a:hover {
 }
 
 @media only screen and (min-width: 1020px) {
+
+    .footer-container blockquote p {
+        width: 80%;
+    }
 
     .main aside {
         margin-right: 20px;
