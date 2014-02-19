@@ -155,7 +155,7 @@ nav ul {
 
 nav li,
 nav li a {
-    text-align: center;
+    text-align: Left;
     text-decoration: none;
     font-weight: 300;
     font-size: 14px;
@@ -237,7 +237,9 @@ nav a:hover {
 
 .main aside h1,
 .main aside h2 {
-    padding-bottom: 40px;
+	padding-bottom: 40px;
+	padding-left: 12px;
+	text-align: left;
 }
 
 .main aside {
