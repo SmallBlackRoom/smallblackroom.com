@@ -1,22 +1,26 @@
 $(document).ready(function() {
     
     $('#toggle-livros').click(function(){
-        $('#livros').show();
-        buttonOn('#toggle-livros');
-        
-        $('#bio').hide();
-        buttonOff('#toggle-bio');
+        activate('livros');
+        deactivate('bio');
     });
     
     $('#toggle-bio').click(function(){
-        $('#livros').hide();
-        buttonOff('#toggle-livros');
-        
-        $('#bio').show();
-        buttonOn('#toggle-bio');
+        deactivate('livros');
+        activate('bio');
     });
 
 });
+
+function activate(section) {
+    $('#' + section).show();
+    buttonOn('#toggle-' + section);
+}
+
+function deactivate(section) {
+    $('#' + section).hide();
+    buttonOff('#toggle-' + section);
+}
 
 function buttonOn(id) {
     $(id + ' img:first-child').attr("src").replace("_off", "_on");
