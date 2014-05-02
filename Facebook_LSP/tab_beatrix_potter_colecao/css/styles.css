@@ -25,6 +25,11 @@ body {
   width: 810px;
 }
 
+figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
+
 /* =================== */
 /* = Section: Livros = */
 /* =================== */
@@ -42,14 +47,25 @@ body {
   width: 200px;
 }
 
-#livros figcaption {
-  margin-top: 10px;
-}
-
 /* ================ */
 /* = Section: Bio = */
 /* ================ */
 
 #bio {
   display: none;
+}
+
+#bio article {
+  margin-top: 15px;
+}
+
+#bio figure {
+  float: left;
+  margin-right: 60px;
+  width: 210px;
+}
+
+#bio .text {
+  float: right;
+  width: 460px;
 }
