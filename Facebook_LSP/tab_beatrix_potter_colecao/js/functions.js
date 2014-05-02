@@ -25,9 +25,11 @@ function deactivate(section) {
 }
 
 function buttonOn(id) {
-    $(id + ' img:first-child').attr("src").replace("_off", "_on");
+    image = $(id + ' img:first-child');
+    image.attr("src", image.attr("src").replace("_off", "_on"));
 }
 
 function buttonOff(id) {
-    $(id + ' img:first-child').attr("src").replace("_on", "_off");
+    image = $(id + ' img:first-child');
+    image.attr("src", image.attr("src").replace("_on", "_off"));
 }
