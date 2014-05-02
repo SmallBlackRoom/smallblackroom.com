@@ -3,11 +3,13 @@ $(document).ready(function() {
     $('#toggle-livros').click(function(){
         activate('livros');
         deactivate('bio');
+        return false;
     });
     
     $('#toggle-bio').click(function(){
         deactivate('livros');
         activate('bio');
+        return false;
     });
 
 });
