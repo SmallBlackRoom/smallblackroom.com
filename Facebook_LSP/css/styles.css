@@ -2,9 +2,9 @@
   font-family: 'Flexo';
   src: url('fonts/flexo-regular-webfont.eot');
   src: url('fonts/flexo-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/flexo-regular-webfont.woff') format('woff'),
-       url('fonts/flexo-regular-webfont.ttf') format('truetype'),
-       url('fonts/flexo-regular-webfont.svg#flexoregular') format('svg');
+url('fonts/flexo-regular-webfont.woff') format('woff'),
+url('fonts/flexo-regular-webfont.ttf') format('truetype'),
+url('fonts/flexo-regular-webfont.svg#flexoregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
