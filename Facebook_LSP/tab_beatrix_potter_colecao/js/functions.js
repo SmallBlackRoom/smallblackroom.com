@@ -22,6 +22,6 @@ function buttonOn(id) {
     $(id + ' img:first-child').attr("src").replace("_off", "_on");
 }
 
-function buttonOff(image) {
+function buttonOff(id) {
     $(id + ' img:first-child').attr("src").replace("_on", "_off");
 }
