@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'flexoLight';
+	src: url('flexo-light-webfont.eot');
+	src: url('flexo-light-webfont.eot?#iefix') format('embedded-opentype'),
+		url('flexo-light-webfont.woff') format('woff'),
+		url('flexo-light-webfont.ttf') format('truetype'),
+		url('flexo-light-webfont.svg') format('svg');
+}
